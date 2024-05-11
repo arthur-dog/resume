@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Ada Stevenson} & Mobile : \href{tel:+61478961246}{+61-478-961-246}\\
+  (she/they) & Email : \href{mailto:ada.stevenson26@gmail.com}{ada.stevenson26@gmail.com} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Curtin University}{Perth, Western Australia}{Bachelor of Electric and Electronic Engineering}{Feb. 2022 -- Projected Jul. 2026}
+    \begin{itemize}
+      \item\small{Specialising in the Embedded Systems stream.}
+      \item\small{Developing knowledge in:
+            \begin{itemize}
+              \item\small{Complex circuit design and analysis}
+              \item\small{Integrated circuit design}
+              \item\small{Embedded development environments, writing bare-metal C and assembly language}
+              \item\small{Systems programming and Operating Systems design}
+                    \end{itemize}}
+    \end{itemize}
+    \resumeSubheading
+      {Christian Brothers College}{Fremantle, Western Australia}
+      {Completed ATAR pathway}
+{Feb. 2016 -- Nov. 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LessPain4Life}{Claremont, WA}
+      {Medical Administrator}{Jun 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{Automated Report Formatter}
+          {Developing a report-fixing tool in Common Lisp that manipulates HTML trees and performs programmable, structure aware changes to format reports appropriately. In the making of this tool, I implemented a simple parser using parser combinators, transforming style strings into manipulatable data.}
+        \resumeItem{Asynchronous Collaboration}
+        {Developed skills for collaborating online and in an asynchronous environment. Can manage time independently, allocating resources to ensure key objectives are completed on-time.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Quarter Acre Hotel}{Applecross, WA}
+      {Maintainence and Wait Staff}{Dec 2019 - Jun 2023}
+      \resumeItemListStart
+      \resumeItem{Customer Attentiveness}
+      {Learned key skills for operating in a fast-moving workspace, including: situational awareness, initiative and attention to detail.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Guix Maintainence}
+    {Help maintain certain packages for GNU Guix, a transactional, immutable Linux distribution configurable in Guile Scheme.}
+    \resumeSubItem{LessPain Report Fixer}
+    {Programmable, structure aware report formatter written in Common Lisp.}
+    \resumeSubItem{Langton's Ant Simulation}
+    {Langton's Ant simulation written in C, exhibiting a consistent API for manipulating actors and the game board.}
+  \resumeSubHeadingListEnd
+
+  \section{Skills}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Programming Proficiency}
+  {Exceptionally sound foundation in computing, with familiarity and experience in:
+    \begin{itemize}
+      \item{the Linux/POSIX environment.}
+      \item{programming in C, Python, Common Lisp, Guile Scheme.}
+      \item{common data structures and algorithms.}
+      \item{debugging techniques and tools such as GDB and Valgrind.}
+      \item{fundamental principles of object-oriented, functional and imperative programming paradigms.}
+    \end{itemize}}
+  \resumeSubItem{Passion for Technology}
+  {\begin{itemize}
+     \item{Deeply passionate about technology and computing systems in various domains.}
+     \item{Self-motivated learner with a keen interest in staying up-to-date with the latest advancements in the field.}
+   \end{itemize}}
+ \resumeSubItem{Communication and Teamwork}
+ {\begin{itemize}
+    \item{Excellent communication skills, both written and verbal, facilitating effective collaboration with team members.}
+  \end{itemize}}
+\resumeSubItem{Problem-solving Abilities}
+{\begin{itemize}
+   \item{Strong analytical and problem-solving skills, honed through academic and extracurricular projects.}
+   \item{Ability to break down problems into easy to undertstand and implement stages.}
+         \end{itemize}}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
